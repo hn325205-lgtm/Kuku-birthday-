@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Kuku ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      color: white;
+    }
+
+    .slideshow-container {
+      width: 80%;
+      max-width: 800px;
+      position: relative;
+      text-align: center;
+    }
+
+    .slide {
+      display: none;
+      font-size: 1.5rem;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      min-height: 200px;
+    }
+
+    .fade {
+      animation: fade 2s;
+    }
+
+    @keyframes fade {
+      from {opacity: 0.3}
+      to {opacity: 1}
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      animation: float 5s infinite;
+    }
+
+    @keyframes float {
+      0% { top: 100%; opacity: 0; }
+      50% { opacity: 1; }
+      100% { top: 0%; opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <h1>Happy Birthday Kakul 🎂✨</h1>
+      <p>My dearest Kuku ❤️</p>
+    </div>
+
+    <div class="slide fade">
+      <p>I love you baby so much...  
+      I know main express nahi kar paunga in words,  
+      but my feelings towards you are so real 🥺❤️</p>
+    </div>
+
+    <div class="slide fade">
+      <p>Mujhe aisa kisi ke saath feel nahi hota,  
+      aur yeh sach hai... You are my true partner 🫂</p>
+    </div>
+
+    <div class="slide fade">
+      <p>Tere pehle main kaafi secretive tha,  
+      but now you know everything about me 🌸</p>
+    </div>
+
+    <div class="slide fade">
+      <p>I love you a lot Kuku 💕  
+      Aur main bhagwan se yahi kamna karta hoon ki  
+      tum hamesha khush raho 🌟</p>
+    </div>
+
+    <div class="slide fade">
+      <p>Main aapke Mata-Pita ka bhi dhanyawaad karta hoon  
+      ki unhone aapko meri life mein bheja ❤️</p>
+    </div>
+
+    <div class="slide fade">
+      <h1>Happy Birthday Once Again 🎉</h1>
+      <p>Forever yours, Harsh 💖</p>
+    </div>
+  </div>
+
+  <div class="hearts">💖✨🌟💫</div>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlides() {
+      slides.forEach(slide => slide.style.display = "none");
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 4000); // 4 sec
+    }
+
+    showSlides();
+  </script>
+</body>
+  </html>
